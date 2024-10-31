@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Car & Customizations - Algo Ninjas Car Store</title>
+
+    <link rel="stylesheet" href="select-car.css" />
+  </head>
+  <body>
+    <div class="logo">
+      <a href="index.html">Algo Ninjas</a>
+    </div>
+    <div class="header">
+      <h1 class="typing-animation">Your porsche has been selected.</h1>
+      <p>Unleash your passion on the road with Porsche!</p>
+    </div>
+
+    <h2 class="modifications-title">Porsche Modifications</h2>
+
+    <div class="content customizations">
+      <div class="customization">
+        <h3>Turbo</h3>
+        <p>High-performance turbo <span class="price"><span class="old-price">$1,800</span> $1,500</span></p>
+      </div>
+      <div class="customization">
+        <h3>Exhaust System</h3>
+        <p>Premium exhaust system <span class="price"><span class="old-price">$1,500</span> $1,200</span></p>
+      </div>
+      <div class="customization">
+        <h3>Color Change</h3>
+        <p>Exclusive color options <span class="price"><span class="old-price">$700</span> $500</span></p>
+      </div>
+      <div class="customization">
+        <h3>Interior Upgrade</h3>
+        <p>Luxurious interior <span class="price"><span class="old-price">$2,500</span> $2,000</span></p>
+      </div>
+    </div>
+
+    <a href="order-details.html" class="next-btn">Next</a>
+    <a href="available-car.html" class="back-btn">Back</a>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Arial", sans-serif;
+      }
+
+      /* Background and body styling */
+      body {
+        background: url("https://i.pinimg.com/1200x/04/95/e9/0495e9c0967031f639a728fee61614fc.jpg")
+          no-repeat center center fixed;
+        background-size: cover;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .logo {
+        position: absolute;
+        color: white;
+        left: 3px;
+        margin: 10px;
+        transition: 0.7s ease;
+        top: 0;
+      }
+      .logo a {
+        font-family: "Pacifico", cursive;
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        font-weight: 900;
+        transition: 0.7s ease;
+      }
+
+      .logo a:hover {
+        cursor: pointer;
+        font-size: 26px;
+        color: #ff6666;
+      }
+
+      .header,
+      .content {
+        width: 100%;
+        max-width: 700px;
+        margin-top: 10px;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 12px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+      }
+
+      .header h1 {
+        font-size: 2.2em;
+        color: #ff4d4d;
+        margin-bottom: 10px;
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 0.15em solid #ff4d4d;
+        animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      }
+
+      /* CSS Typing Animation */
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: #ff4d4d;
+        }
+      }
+
+      .modifications-title {
+        color: #ff3333;
+        font-size: 1.8em;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+      }
+
+      .customizations {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .customization {
+        flex: 1;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 12px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s, box-shadow 0.3s;
+        text-align: center;
+        max-width: 180px;
+        margin-top: 15px;
+      }
+
+      .customization:hover {
+        transform: scale(1.1);
+        box-shadow: 0 10px 20px rgba(255, 0, 0, 0.3);
+      }
+
+      .customization h3 {
+        font-size: 1.5em;
+        color: #ff4d4d;
+        margin-bottom: 10px;
+      }
+
+      /* Style for the price and sale text */
+      .price {
+        color: #32cd32; /* لون السعر الأخضر */
+        font-weight: bold;
+        margin-left: 8px;
+      }
+      .old-price {
+        text-decoration: line-through;
+        color: #ff4d4d;
+        margin-right: 5px;
+      }
+
+      .next-btn,
+      .back-btn {
+        margin-top: 20px;
+        padding: 10px 25px;
+        background: linear-gradient(45deg, #ff3333, #ff6666);
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 8px;
+        transition: 0.3s ease;
+        width: 20%;
+        font-size: 1.1em;
+      }
+
+      .next-btn:hover,
+      .back-btn:hover {
+        background: linear-gradient(45deg, #ff6666, #ff9999);
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+      }
+    </style>
+  </body>
+</html>

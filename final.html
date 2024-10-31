@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank you</title>
+    <link rel="stylesheet" href="final.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="logo">
+      <a href="index.html">Algo Ninjas</a>
+    </div>
+    <div class="thank-you-page">
+      <h2>Thank You for Visiting Algo Ninjas Porsche Store!</h2>
+      <p>
+        We look forward to serving you again. Follow us to stay updated with our
+        latest offers and news!
+      </p>
+
+      <div class="social-links">
+        <a href="https://facebook.com" class="social-icon"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://instagram.com" class="social-icon"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://whatsapp.com" class="social-icon"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+      </div>
+      <form class="newsletter-form">
+        <label for="email" class="text">Subscribe to our newsletter:</label>
+        <input type="email" id="email" placeholder="Enter your email" />
+        <button type="submit">Subscribe Now</button>
+      </form>
+
+      <a href="index.html" class="back-to-home">Back to Main Menu</a>
+    </div>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: url("https://albindesign.com/wp-content/uploads/2022/06/porsche_BlackStudio_BackLight1_edit.jpg")
+          no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #f5f5f5;
+        padding: 20px;
+        overflow: hidden;
+      }
+      .logo a {
+        position: absolute;
+        left: 2px;
+        top: 0px;
+        text-decoration: none;
+        font-family: "Pacifico", cursive;
+        text-decoration: none;
+        color: white;
+        font-size: 27px;
+        font-weight: 600;
+        transition: 0.7s ease;
+      }
+      .logo a:hover {
+        cursor: pointer;
+        font-size: 25px;
+      }
+
+      .thank-you-page {
+        text-align: center;
+        background: rgba(0, 0, 0, 0.85);
+        padding: 50px;
+        border-radius: 15px;
+        width: 100%;
+        max-width: 700px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+      }
+
+      .thank-you-page h2 {
+        font-size: 2.8em;
+        color: #ff4d4d;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+
+      .thank-you-page p {
+        font-size: 1.3em;
+        margin-bottom: 25px;
+        line-height: 1.6;
+        color: #e0e0e0;
+      }
+
+      .social-links {
+        margin: 30px 0;
+      }
+
+      .social-icon i {
+        font-size: 1.8em;
+        color: white;
+        margin: 0 12px;
+        transition: transform 0.3s ease, color 0.3s ease;
+      }
+
+      .social-icon i:hover {
+        color: #ff4d4d;
+        transform: scale(1.2);
+      }
+
+      .newsletter-form input {
+        background-color: rgba(30, 30, 30, 0.9);
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        width: 250px; /* تقليل العرض لحقل إدخال البريد الإلكتروني */
+        font-size: 1em;
+        color: #333;
+        margin-top: 20px; /* إضافة مسافة أعلى حقل الإدخال */
+        margin-left: 5px;
+        color: white;
+      }
+
+      .newsletter-form button {
+        padding: 10px 15px; /* تقليل عرض زر الاشتراك */
+        background-color: #ff4d4d;
+        border: none;
+        color: white;
+        font-size: 1.2em;
+        border-radius: 8px;
+        cursor: pointer;
+        white-space: nowrap;
+        transition: background-color 0.3s, transform 0.3s;
+        margin-top: 40px;
+        width: 40%;
+        height: 50px;
+      }
+
+      .newsletter-form button:hover {
+        background-color: #ff6666;
+        transform: scale(1.05);
+      }
+
+      .back-to-home {
+        display: inline-block;
+        margin-top: 25px;
+        padding: 12px 25px;
+        background: linear-gradient(45deg, #ff3333, #ff6666);
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+        border-radius: 8px;
+        transition: transform 0.3s;
+        width: 40%;
+      }
+
+      .newsletter-form .text {
+        font-size: 1.2em; /* زيادة حجم الخط */
+        font-weight: bold; /* جعل الخط عريض */
+        margin-bottom: 15px; /* تباعد أسفل النص */
+        white-space: nowrap; /* منع كسر السطر */
+        margin-top: 20px;
+        padding-left: 30px;
+      }
+
+      .back-to-home:hover {
+        transform: scale(1.1);
+      }
+    </style>
+  </body>
+</html>

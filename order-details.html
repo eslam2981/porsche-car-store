@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Details & Order Confirmation - Algo Ninjas Car Store</title>
+    <link rel="stylesheet" href="order-details.css" />
+  </head>
+  <body>
+    <div class="logo">
+      <a href="index.html">Algo Ninjas</a>
+    </div>
+    <div class="form-container">
+      <h2>Customer Details</h2>
+      <form action="final.html">
+        <input type="text" placeholder="Name" required />
+        <input type="email" placeholder="Email (Optional)"  />
+
+        <!-- Fieldset for modifications with legend -->
+        <fieldset class="modification-fieldset">
+          <legend>Choose Modifications</legend>
+          <div class="checkbox-group">
+            <label
+              ><input type="checkbox" name="modifications" value="Turbo" />
+              Turbo - $1,500</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="modifications"
+                value="Exhaust System"
+              />
+              Exhaust System - $1,200</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="modifications"
+                value="Color Change"
+              />
+              Color Change - $500</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="modifications"
+                value="Interior Upgrade"
+              />
+              Interior Upgrade - $2,000</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="modifications"
+                value="Sunroof Installation"
+              />
+              Sunroof Installation - $800</label
+            >
+            <label
+              ><input type="checkbox" name="modifications" value="Spoiler" />
+              Spoiler - $400</label
+            >
+          </div>
+        </fieldset>
+
+        <textarea
+          placeholder="Feedback (Optional)"
+          rows="3"
+          
+        ></textarea>
+        <button type="submit" class="submit" >Submit Order</button>
+      </form>
+    </div>
+
+    <a href="select-car.html" class="back-btn">Back</a>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+/* Background and body styling */
+body {
+  background: url("https://i.pinimg.com/1200x/04/95/e9/0495e9c0967031f639a728fee61614fc.jpg")
+    no-repeat center center fixed;
+  background-size: cover;
+  color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.logo a {
+  position: absolute;
+  left: 2px;
+  top: 0px;
+  text-decoration: none;
+  font-family: "Pacifico", cursive;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-weight: 900;
+  transition: 0.7s ease;
+}
+.logo a:hover {
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.form-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 25px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.form-container h2 {
+  color: #ff4d4d;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(30, 30, 30, 0.9);
+  color: #fff;
+  font-size: 1em;
+  outline: none;
+  resize: none;
+}
+
+/* Styling for fieldset and legend */
+.modification-fieldset {
+  border: 1px solid #ff4d4d;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.modification-fieldset legend {
+  color: #ff4d4d;
+  font-size: 1.2em;
+  padding: 0 10px;
+}
+
+/* Styling for the checkbox options */
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  background-color: rgba(50, 50, 50, 0.9);
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1em;
+  color: #f5f5f5;
+  width: calc(50% - 5px);
+}
+
+.checkbox-group input[type="checkbox"] {
+  appearance: none;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ff4d4d;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.checkbox-group input[type="checkbox"]:checked {
+  background-color: #ff4d4d;
+}
+
+.checkbox-group input[type="checkbox"]:checked::after {
+  content: "✓";
+  font-size: 16px;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 4px;
+}
+
+.checkbox-group label:hover {
+  background-color: rgba(70, 70, 70, 0.9);
+}
+
+.form-container input[type="submit"]:hover {
+  background-color: #ff6666;
+}
+
+.submit {
+  margin-top: 6px;
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #ff3333, #ff6666);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s ease;
+width: 100%;
+height: 55px;
+margin-top: 0px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.back-btn {
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #ff3333, #ff6666);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  width: 30%;
+  font-size: 20px;
+}
+
+.back-btn:hover {
+  background: linear-gradient(45deg, #ff6666, #ff9999);
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+}
+.submit:hover {
+  background: linear-gradient(45deg, #ff6666, #ff9999);
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+}
+
+    </style>
+  </body>
+</html>
